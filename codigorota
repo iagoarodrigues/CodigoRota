@@ -1,0 +1,16 @@
+create table usuarios (
+id int(11),
+nome varchar(255), 
+valor double(8,2),
+quantidade int(11)
+);
+
+
+insert into
+usuarios (`nome`,`quantidade`,`valor`,`updated_at`,`created_at`)values ('iagoiago','2000','2000','2022 -09 -25 13: 37: 33','2022 -09 -25 22: 37: 33');
+  
+ALTER TABLE usuarios ADD COLUMN updated_at timestamp(3) NOT NULL;
+ALTER TABLE saloes  ADD COLUMN created_at timestamp(3) NOT NULL;
+ALTER TABLE usuarios ADD COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+
+
